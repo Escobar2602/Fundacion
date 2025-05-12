@@ -2,127 +2,117 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-  <body>
-    <section class="wrapper">
-      <div class="inner" style="--quantity: 10;">
-        <div class="card" style="--index: 0; --color-card: 142, 249, 252;">
-          <img
-            src="/images/esp1.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 1;--color-card: 142, 252, 204;">
-          <img
-            src="/images/esp2.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 2;--color-card: 142, 252, 157;">
-          <img
-            src="/images/esp3.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 3;--color-card: 215, 252, 142;">
-          <img
-            src="/images/esp4.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 4;--color-card: 252, 252, 142;">
-          <img
-            src="/images/esp5.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 5;--color-card: 252, 208, 142;">
-          <img
-            src="/images/esp6.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 6;--color-card: 252, 142, 142;">
-          <img
-            src="/images/esp7.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 7;--color-card: 252, 142, 239;">
-          <img
-            src="/images/esp8.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 8;--color-card: 204, 142, 252;">
-          <img
-            src="/images/esp9.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
-        </div>
-        <div class="card" style="--index: 9;--color-card: 142, 202, 252;">
-          <img
-            src="/images/imagen1.jpg"
-            class="w-full h-full object-cover rounded-lg"
-          />
+<Layout title="Galería de Fotos">
+  <body class="bg-gray-50">
+    <!-- Galería principal con efecto de tarjetas coloreadas -->
+    <section class="py-17 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Nuestra Galería</h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div class="card-animated" style="--color-card: 142, 249, 252;">
+            <img src="/images/esp1.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 1" />
+          </div>
+          <div class="card-animated" style="--color-card: 142, 252, 204;">
+            <img src="/images/esp2.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 2" />
+          </div>
+          <div class="card-animated" style="--color-card: 142, 252, 157;">
+            <img src="/images/esp3.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 3" />
+          </div>
+          <div class="card-animated" style="--color-card: 215, 252, 142;">
+            <img src="/images/esp4.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 4" />
+          </div>
+          <div class="card-animated" style="--color-card: 252, 252, 142;">
+            <img src="/images/esp5.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 5" />
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Galería secundaria organizada -->
+    <section class="py-8 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 gap-6">
+          <!-- Imagen destacada -->
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src="/images/eee1.jpg" 
+              class="w-full h-auto max-h-96 object-cover" 
+              alt="Imagen destacada"
+            />
+          </div>
+          
+          <!-- Mini galería -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                src="/images/eee2.jpg" 
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 1"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                 src="/images/eee3.jpg"  
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 2"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                 src="/images/eee4.jpg"  
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 3"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                 src="/images/eee5.jpg" 
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 4"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                 src="/images/eee6.jpg" 
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section>   
-    
+    <style is:global>
+      .card-animated {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+      
+      .card-animated::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(var(--color-card), 0.1);
+        z-index: 1;
+        transition: all 0.3s ease;
+      }
+      
+      .card-animated:hover::before {
+        background: rgba(var(--color-card), 0.3);
+      }
+      
+      .card-animated img {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-        </div>
-    </div>
-</div>
-
-</section>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
   </body>
 </Layout>

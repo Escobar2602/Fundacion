@@ -4,35 +4,37 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Misión y Visión">
-  <main class="min-h-screen bg-gradient-to-b from-white to-blue-50 py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto">
-      <!-- Encabezado -->
-      <div class="text-center mb-12 md:mb-16 animate-fade-in">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-500">
-            Misión y Visión
-          </span>
-        </h1>
-        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-          Los principios que guían nuestro trabajo en Fundación Renaced
-        </p>
-      </div>
+  <body>
 
-      <!-- Grid Responsivo -->
-      <div class="grid gap-8 md:gap-12">
-        <!-- Tarjeta Misión -->
-        <div class="animate-slide-up delay-100 bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
-          <div class="h-2 bg-gradient-to-r from-blue-500 to-teal-500"></div>
-          <div class="p-6 sm:p-8">
-            <h2 class="text-xl sm:text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-500">
-              Nuestra Misión
+    <main class="min-h-screen bg-gradient-to-b from-white to-blue-50 py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <!-- Encabezado -->
+        <div class="text-center mb-12 md:mb-16 animate-fade-in">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-500">
+              Misión y Visión
+            </span>
+          </h1>
+          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+            Los principios que guían nuestro trabajo en Fundación Renaced
+          </p>
+        </div>
+        
+        <!-- Grid Responsivo -->
+        <div class="grid gap-8 md:gap-12">
+          <!-- Tarjeta Misión -->
+          <div class="animate-slide-up delay-100 bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+            <div class="h-2 bg-gradient-to-r from-blue-500 to-teal-500"></div>
+            <div class="p-6 sm:p-8">
+              <h2 class="text-xl sm:text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-500">
+                Nuestra Misión
             </h2>
             <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
               Promover el desarrollo integral de niños en condición de vulnerabilidad económica, social y emocional a través de un conjunto de actividades coordinadas que potencialicen sus capacidades e identidad para que vean el camino en que deben andar y la obra que han de realizar cumpliendo una idónea función social.
             </p>
           </div>
         </div>
-
+        
         <!-- Tarjeta Visión -->
         <div class="animate-slide-up delay-200 bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
           <div class="h-2 bg-gradient-to-r from-pink-500 to-rose-500"></div>
@@ -48,7 +50,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </main>
-
+  
   <!-- Animaciones con Tailwind -->
   <style is:global>
     @keyframes fadeIn {
@@ -66,22 +68,24 @@ import Layout from '../layouts/Layout.astro';
         transform: translateY(0);
       }
     }
-
+    
     .animate-fade-in {
       animation: fadeIn 1s ease-out forwards;
     }
-
+    
     .animate-slide-up {
       animation: slideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
       opacity: 0;
     }
-
+    
     .delay-100 {
       animation-delay: 100ms;
     }
-
+    
     .delay-200 {
       animation-delay: 200ms;
     }
-  </style>
-</Layout>
+    </style>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+  </Layout>

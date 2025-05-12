@@ -21,7 +21,8 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-    <section id="nosotros" class="py-16 bg-blue-300 relative z-10">
+<section id="nosotros" class="py-16 relative z-10 bg-cover bg-center bg-no-repeat"
+         style="background-image: url('/images/somos.jpg');">
       <div class="max-w-5xl mx-auto px-4">
         <div class="flex flex-col md:flex-row items-center gap-8">
           <div class="md:w-1/2 text-center md:text-left">
@@ -56,6 +57,14 @@ import Layout from '../layouts/Layout.astro';
         <img src="/images/imagen3.jpg" class="block w-full h-full object-cover" alt="Slide 3" />
       </div>
       <!-- Slide 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="/images/imagen4.jpg" class="block w-full h-full object-cover" alt="Slide 4" />
+      </div>
+         <!-- Slide 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="/images/imagen4.jpg" class="block w-full h-full object-cover" alt="Slide 4" />
+      </div>
+         <!-- Slide 6 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <img src="/images/imagen4.jpg" class="block w-full h-full object-cover" alt="Slide 4" />
       </div>

@@ -7,118 +7,163 @@ import Layout from '../layouts/Layout.astro';
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12 md:mb-16 animate-fade-in">
 
-          <!-- Acordeón con 6 galerías -->
+          <!-- Acordeón -->
           <div id="accordion-collapse" data-accordion="collapse">
 
-            <!-- Ítem 1 -->
-            <h2 id="accordion-heading-1">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-body-1" aria-expanded="false" aria-controls="accordion-body-1">
-                <span>Galería 1: Misión</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
-              </button>
-            </h2>
-            <div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
-              <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                <div class="flex overflow-x-auto gap-4">
-                  <img src="/images/foto1.jpg" alt="1-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto2.jpg" alt="1-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto3.jpg" alt="1-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto4.jpg" alt="1-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                </div>
-              </div>
-            </div>
+           <!-- Ítem 1 -->
+<h2 id="accordion-heading-1">
+  <button type="button"
+    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+    data-accordion-target="#accordion-body-1" aria-expanded="false" aria-controls="accordion-body-1">
+    <span>Misión</span>
+    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 10 6">
+      <path fill-rule="evenodd" d="M5 6 0 0h10L5 6z" clip-rule="evenodd" />
+    </svg>
+  </button>
+</h2>
+<div id="accordion-body-1" class="hidden" aria-labelledby="accordion-heading-1">
+  <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+
+    <!-- Botones -->
+    <div class="flex justify-between mb-2">
+      <a href="#img-1-1" class="px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300">◀</a>
+      <a href="#img-1-4" class="px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300">▶</a>
+    </div>
+
+    <!-- Galería -->
+    <div class="flex overflow-x-auto gap-4 scroll-smooth snap-x snap-mandatory touch-auto">
+  <img src="/images/foto1.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start">
+  <img src="/images/foto2.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start">
+  <img src="/images/foto3.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start">
+  <img src="/images/foto4.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start">
+    <img src="/images/foto1.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start">
+  <img src="/images/foto2.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start">
+  <img src="/images/foto3.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start">
+  <img src="/images/foto4.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start">
+</div>
+
+  </div>
+</div>
 
             <!-- Ítem 2 -->
             <h2 id="accordion-heading-2">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
-                <span>Galería 2: Visión</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
+              <button type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
+                <span>Visión</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" d="M5 6 0 0h10L5 6z" clip-rule="evenodd" />
+                </svg>
               </button>
             </h2>
             <div id="accordion-body-2" class="hidden" aria-labelledby="accordion-heading-2">
               <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                 <div class="flex overflow-x-auto gap-4">
-                  <img src="/images/foto5.jpg" alt="2-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto6.jpg" alt="2-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto7.jpg" alt="2-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto8.jpg" alt="2-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
+                  <img src="/images/foto1.jpeg" alt="2-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto2.jpeg" alt="2-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto3.jpeg" alt="2-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto4.jpeg" alt="2-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
                 </div>
               </div>
             </div>
 
             <!-- Ítem 3 -->
             <h2 id="accordion-heading-3">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
-                <span>Galería 3: Valores</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
+              <button type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-body-3" aria-expanded="false" aria-controls="accordion-body-3">
+                <span>Valores</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" d="M5 6 0 0h10L5 6z" clip-rule="evenodd" />
+                </svg>
               </button>
             </h2>
             <div id="accordion-body-3" class="hidden" aria-labelledby="accordion-heading-3">
               <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                 <div class="flex overflow-x-auto gap-4">
-                  <img src="/images/foto9.jpg" alt="3-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto10.jpg" alt="3-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto11.jpg" alt="3-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto12.jpg" alt="3-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
+                  <img src="/images/foto1.jpeg" alt="3-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto2.jpeg" alt="3-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto3.jpeg" alt="3-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto4.jpeg" alt="3-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
                 </div>
               </div>
             </div>
 
             <!-- Ítem 4 -->
             <h2 id="accordion-heading-4">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
-                <span>Galería 4: Historia</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
+              <button type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-body-4" aria-expanded="false" aria-controls="accordion-body-4">
+                <span>Historia</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" d="M5 6 0 0h10L5 6z" clip-rule="evenodd" />
+                </svg>
               </button>
             </h2>
             <div id="accordion-body-4" class="hidden" aria-labelledby="accordion-heading-4">
               <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                 <div class="flex overflow-x-auto gap-4">
-                  <img src="/images/foto13.jpg" alt="4-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto14.jpg" alt="4-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto15.jpg" alt="4-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto16.jpg" alt="4-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
+                  <img src="/images/foto1.jpeg" alt="4-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto2.jpeg" alt="4-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto3.jpeg" alt="4-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto4.jpeg" alt="4-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
                 </div>
               </div>
             </div>
 
             <!-- Ítem 5 -->
             <h2 id="accordion-heading-5">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-body-5" aria-expanded="false" aria-controls="accordion-body-5">
-                <span>Galería 5: Proyectos</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
+              <button type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-body-5" aria-expanded="false" aria-controls="accordion-body-5">
+                <span>Equipo</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" d="M5 6 0 0h10L5 6z" clip-rule="evenodd" />
+                </svg>
               </button>
             </h2>
             <div id="accordion-body-5" class="hidden" aria-labelledby="accordion-heading-5">
               <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                 <div class="flex overflow-x-auto gap-4">
-                  <img src="/images/foto17.jpg" alt="5-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto18.jpg" alt="5-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto19.jpg" alt="5-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto20.jpg" alt="5-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
+                  <img src="/images/foto1.jpeg" alt="5-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto2.jpeg" alt="5-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto3.jpeg" alt="5-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto4.jpeg" alt="5-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
                 </div>
               </div>
             </div>
 
             <!-- Ítem 6 -->
             <h2 id="accordion-heading-6">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-body-6" aria-expanded="false" aria-controls="accordion-body-6">
-                <span>Galería 6: Comunidad</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/></svg>
+              <button type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 rounded-b-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-body-6" aria-expanded="false" aria-controls="accordion-body-6">
+                <span>Reconocimientos</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 10 6">
+                  <path fill-rule="evenodd" d="M5 6 0 0h10L5 6z" clip-rule="evenodd" />
+                </svg>
               </button>
             </h2>
             <div id="accordion-body-6" class="hidden" aria-labelledby="accordion-heading-6">
               <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                 <div class="flex overflow-x-auto gap-4">
-                  <img src="/images/foto21.jpg" alt="6-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto22.jpg" alt="6-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto23.jpg" alt="6-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
-                  <img src="/images/foto24.jpg" alt="6-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0">
+                  <img src="/images/foto1.jpeg" alt="6-1" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto2.jpeg" alt="6-2" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto3.jpeg" alt="6-3" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
+                  <img src="/images/foto4.jpeg" alt="6-4" class="w-48 h-32 object-cover rounded-lg flex-shrink-0 cursor-pointer">
                 </div>
               </div>
             </div>
-
           </div>
+
+          <!-- Modal -->
+          <div id="image-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-80 flex items-center justify-center">
+            <div class="relative max-w-full max-h-full p-4">
+              <button id="close-modal" class="absolute top-2 right-2 text-white text-3xl font-bold hover:text-red-400">&times;</button>
+              <img id="modal-image" src="" alt="Vista previa" class="max-w-full max-h-[80vh] rounded-lg shadow-lg">
+            </div>
+          </div>
+
 
         </div>
       </div>

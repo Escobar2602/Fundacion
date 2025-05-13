@@ -5,55 +5,93 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
   <title>Donaciones</title>
 
+  <style>
+    h1 {
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: transparent !important;
+    }
+    #donaciones-container {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  h1 { 
+     font-family: 'Bubblegum Sans', cursive;
+
+    @font-face {
+    font-family: 'SmothyBubble';
+    src: url('/fonts/SmothyBubble.ttf') format('truetype');
+  }
+
+  .smothy-font {
+    font-family: 'SmothyBubble', cursive;
+  }
+}
+
+  </style>
+
   <div
-    class="bg-cover bg-center min-h-screen flex items-center justify-center p-4 mt-20"
+    id="donaciones-container"
+    class="bg-cover bg-center min-h-screen flex items-center justify-center p-0 m-0"
     style="background-image: url('/images/fondo.jpg');"
   >
-    <div class="flex flex-col md:flex-row items-center justify-center gap-6 max-w-5xl w-full bg-opacity-90 rounded-xl p-4 md:p-6 shadow-xl">
+    <div class="flex flex-col items-center justify-center gap-8 max-w-5xl w-full bg-opacity-90 rounded-xl p-6 shadow-xl mt-12">
 
-      <!-- Imagen del QR -->
-      <div class="w-full max-w-xs h-auto flex-shrink-0">
-        <img src="/images/QR DE PRUEBA.png" alt="Código QR" class="w-full h-full object-contain rounded-lg border border-gray-300" />
-      </div>
+      <!-- TÍTULO -->
+      <h1 class="smothy-font text-4xl font-bold text-black text-center drop-shadow-lg">
+        Donaciones Aqui
+      </h1>
 
-      <!-- Tarjeta de información -->
-      <div class="w-full max-w-md relative rounded-xl shadow-2xl overflow-hidden transition-transform transform hover:scale-105">
-        <!-- Imagen de fondo -->
-        <img class="absolute inset-0 w-full h-full object-cover" src="https://i.imgur.com/kGkSg1v.png" alt="Fondo" />
 
-        <!-- Capa oscura para contraste -->
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-        <!-- Contenido -->
-        <div class="relative z-10 text-white px-4 md:px-8 py-6 space-y-4">
-          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0">
-            <div>
-              <p class="text-sm font-light">Nombre</p>
-              <p class="text-lg font-semibold tracking-wider">Fundación Renaced</p>
+      <!-- CONTENIDO (QR + TARJETA) -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6 w-full">
+
+        <!-- Imagen del QR -->
+        <div class="w-full max-w-xs h-auto flex-shrink-0">
+          <img src="/images/QR DE PRUEBA.png" alt="Código QR" class="w-full h-full object-contain rounded-lg border border-gray-300" />
+        </div>
+
+        <!-- Tarjeta de información -->
+        <div class="w-full max-w-md relative rounded-xl shadow-2xl overflow-hidden transition-transform transform hover:scale-105">
+          <!-- Imagen de fondo -->
+          <img class="absolute inset-0 w-full h-full object-cover" src="https://i.imgur.com/kGkSg1v.png" alt="Fondo" />
+
+          <!-- Capa oscura para contraste -->
+          <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+          <!-- Contenido -->
+          <div class="relative z-10 text-white px-4 md:px-8 py-6 space-y-4">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-0">
+              <div>
+                <p class="text-sm font-light">Nombre</p>
+                <p class="text-lg font-semibold tracking-wider">Fundación Renaced</p>
+              </div>
+              <img class="w-32 sm:w-36 h-10 object-contain" src="/images/Logo_Bancolombia2.png" alt="Bancolombia" />
             </div>
-            <img class="w-32 sm:w-36 h-10 object-contain" src="/images/Logo_Bancolombia2.png" alt="Bancolombia" />
-          </div>
 
-          <div>
-            <p class="text-sm font-light">Número de cuenta</p>
-            <p class="text-lg font-semibold tracking-wider">4642 3489 9867 7632</p>
-          </div>
-
-          <div class="flex flex-col sm:flex-row justify-between gap-4">
             <div>
-              <p class="text-xs font-light">Cédula de Ciudadanía</p>
-              <p class="text-sm font-medium tracking-wider">1043765292</p>
+              <p class="text-sm font-light">Número de cuenta</p>
+              <p class="text-lg font-semibold tracking-wider">4642 3489 9867 7632</p>
             </div>
-            <div>
-              <p class="text-xs font-light">Tipo de Cuenta</p>
-              <p class="text-sm font-medium tracking-wider">AHORROS BANCOLOMBIA</p>
+
+            <div class="flex flex-col sm:flex-row justify-between gap-4">
+              <div>
+                <p class="text-xs font-light">Cédula de Ciudadanía</p>
+                <p class="text-sm font-medium tracking-wider">1043765292</p>
+              </div>
+              <div>
+                <p class="text-xs font-light">Tipo de Cuenta</p>
+                <p class="text-sm font-medium tracking-wider">AHORROS BANCOLOMBIA</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <!-- En el archivo Layout.astro o directamente en tu vista -->
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </Layout>

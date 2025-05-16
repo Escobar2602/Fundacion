@@ -2,9 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Misión y Visión">
+<Layout>
+  <title>Festividad</title>
   <body>
-    <main class="min-h-screen bg-[url('/images/Fiesta.jpg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 sm:px-6 lg:px-8 mt-10 backdrop-brightness-90">
+  <main class="min-h-screen bg-[url('/images/Fiesta.jpg')] bg-cover bg-center bg-no-repeat py-12 md:py-20 px-4 sm:px-6 lg:px-8 mt-10 backdrop-brightness-90">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12 md:mb-16 animate-fade-in">
           <!-- Acordeón -->
@@ -13,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
             <!-- Ítem 1 -->
             <h2 id="accordion-heading-1">
               <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-body-1" aria-expanded="false" aria-controls="accordion-body-1">
-                <span>Dia del Amor y la amisttad</span>
+                <span class="text-black">Compartir dia del niño</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 10 6">
                   <path fill-rule="evenodd" d="M5 6 0 0h10L5 6z" clip-rule="evenodd"></path>
                 </svg>
@@ -44,7 +45,7 @@ import Layout from "../layouts/Layout.astro";
             <!-- Ítem 2 -->
             <h2 id="accordion-heading-2">
               <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-body-2" aria-expanded="false" aria-controls="accordion-body-2">
-                <span>Dia del---</span>
+                <span class="text-black">Enseñanza biblica La creación de Dios</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 10 6">
                   <path fill-rule="evenodd" d="M5 6 0 0h10L5 6z" clip-rule="evenodd"></path>
                 </svg>
@@ -57,7 +58,10 @@ import Layout from "../layouts/Layout.astro";
                     &#9664;
                   </button>
                   <div class="flex overflow-x-auto gap-4 scroll-smooth snap-x snap-mandatory touch-auto">
-                    <!-- imágenes aquí -->
+                    <img src="/images/foto01.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start" />
+                    <img src="/images/foto02.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start" />
+                    <img src="/images/foto03.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start" />
+                    <!-- <img src="/images/foto04.jpeg" alt="..." class="w-48 h-32 object-cover rounded-lg flex-shrink-0 snap-start" /> -->
                   </div>
                   <button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-white/70 rounded-full shadow hover:bg-white" onclick="this.previousElementSibling.scrollBy({ left: 200, behavior: 'smooth' })">
                     &#9654;

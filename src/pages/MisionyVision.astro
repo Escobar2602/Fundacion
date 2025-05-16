@@ -3,7 +3,8 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Misión y Visión">
+<Layout>
+  <title>Misión y Visión</title>
   <body>
 
     <main class="min-h-screen bg-gradient-to-b from-white to-blue-50 py-12 md:py-20 px-4 sm:px-6 lg:px-8 mt-10">
@@ -49,40 +50,40 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
-      <!-- Botón "Ver más" -->
-<div class="text-center mt-8">
-  <button 
-    onclick="document.getElementById('extra-section').classList.remove('hidden')" 
-    class="cursor-pointer bg-gray-800 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none">
-    Ver más
-  </button>
-</div>
+            <!-- Botón "Ver más" -->
+      <div class="text-center mt-8">
+        <button 
+          onclick="document.getElementById('extra-section').classList.remove('hidden')" 
+          class="cursor-pointer bg-gray-800 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none">
+          Ver más
+        </button>
+      </div>
 
-<div id="extra-section" class="hidden mt-12 grid gap-8 md:grid-cols-2 animate-fade-in">
-  <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
-    <div class="h-2 bg-gradient-to-r from-blue-500 to-rose-600"></div>
-    <div class="p-6 sm:p-8">
-      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-500">
-        Filosofia
-      </h2>
-      <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
-        Trabajo arduo con honestidad con ética y amor al prójimo reconociendo el potencial de cada niño para mejorar la calidad y dignificar sus vidas a  
-        través de programas y técnicas educativas con un tipo humano idóneo comprometido a mejorar la calidad de vida que ellos puedan ver un futuro digno y feliz.      </p>
-    </div>
-  </div>
+      <div id="extra-section" class="hidden mt-12 grid gap-8 md:grid-cols-2 animate-fade-in">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+          <div class="h-2 bg-gradient-to-r from-blue-500 to-rose-600"></div>
+          <div class="p-6 sm:p-8">
+            <h2 class="text-xl sm:text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-500">
+              Filosofia
+            </h2>
+            <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+              Trabajo arduo con honestidad con ética y amor al prójimo reconociendo el potencial de cada niño para mejorar la calidad y dignificar sus vidas a  
+              través de programas y técnicas educativas con un tipo humano idóneo comprometido a mejorar la calidad de vida que ellos puedan ver un futuro digno y feliz.      </p>
+          </div>
+        </div>
 
-  <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
-    <div class="h-2 bg-gradient-to-r from-pink-500 to-purple-700"></div>
-    <div class="p-6 sm:p-8">
-      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-500">
-        Nuestros Valores
-      </h2>
-      <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
-        Amor, solidaridad, compromiso y transparencia.
-      </p>
-    </div>
-  </div>
-</div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+          <div class="h-2 bg-gradient-to-r from-pink-500 to-purple-700"></div>
+          <div class="p-6 sm:p-8">
+            <h2 class="text-xl sm:text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-500">
+              Nuestros Valores
+            </h2>
+            <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
+              Amor, solidaridad, compromiso y transparencia.
+            </p>
+          </div>
+        </div>
+      </div>
 
     </div>
   </main>

@@ -1,0 +1,160 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <title>Galeria de Fotos</title>
+  <body class="bg-gray-50">
+    <!-- Galería principal con efecto de tarjetas coloreadas -->
+    <section class="py-17 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Nuestra Galería</h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div class="card-animated" style="--color-card: 142, 249, 252;">
+            <img src="/images/esp1.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 1" />
+          </div>
+          <div class="card-animated" style="--color-card: 142, 252, 204;">
+            <img src="/images/esp2.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 2" />
+          </div>
+          <div class="card-animated" style="--color-card: 142, 252, 157;">
+            <img src="/images/esp3.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 3" />
+          </div>
+          <div class="card-animated" style="--color-card: 215, 252, 142;">
+            <img src="/images/esp4.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 4" />
+          </div>
+          <div class="card-animated" style="--color-card: 252, 252, 142;">
+            <img src="/images/esp5.jpg" class="w-full h-64 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105" alt="Imagen 5" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería secundaria organizada -->
+    <section class="py-8 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 gap-6">
+          <!-- Imagen destacada -->
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img 
+              src="/images/eee1.jpg" 
+              class="w-full h-auto max-h-96 object-cover" 
+              alt="Imagen destacada"
+            />
+          </div>
+          
+          <!-- Mini galería -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                src="/images/eee2.jpg" 
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 1"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                 src="/images/eee3.jpg"  
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 2"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                 src="/images/eee4.jpg"  
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 3"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                 src="/images/eee5.jpg" 
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 4"
+              />
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <img 
+                 src="/images/eee6.jpg" 
+                class="w-full h-32 sm:h-40 object-cover" 
+                alt="Miniatura 5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider de videos tipo carrusel -->
+<section class="py-8 px-4 sm:px-6 lg:px-8 bg-gray-100">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 text-center">Videos destacados</h2>
+
+    <div class="flex gap-4 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 pb-4">
+      <!-- Video 1 -->
+      <div class="min-w-[300px] sm:min-w-[360px] flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden">
+        <video controls class="w-full h-56 object-cover">
+          <source src="/images/Video1.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="min-w-[300px] sm:min-w-[360px] flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden">
+        <video controls class="w-full h-56 object-cover">
+          <source src="/images/Presentacion.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+
+
+      <!-- Video 3 -->  
+      <div class="min-w-[300px] sm:min-w-[360px] flex-shrink-0 bg-white rounded-xl shadow-md overflow-hidden">
+        <video controls class="w-full h-56 object-cover">
+          <source src="/images/video4.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+      </video>
+       
+
+
+
+     
+    </div>
+  </div>
+
+  
+</section>
+
+
+    <style is:global>
+      .card-animated {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+      
+      .card-animated::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(var(--color-card), 0.1);
+        z-index: 1;
+        transition: all 0.3s ease;
+      }
+      
+      .card-animated:hover::before {
+        background: rgba(var(--color-card), 0.3);
+      }
+      
+      .card-animated img {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</Layout>
